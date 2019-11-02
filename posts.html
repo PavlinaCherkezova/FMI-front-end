@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flutter - Posts</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+
+<body>
+	<header class="posts-header">
+		<h1 class="posts-page-header">Flutter</h1>
+		<div class="posts-search">
+			<input type=text placeholder="Search" name="search" id="search">
+			<button class="fa fa-search"></button>
+		</div>
+	</header>
+
+	<div class="container-bg">
+		<div class="container">
+			<div class="profile">
+				<figure class="profile-avatar">
+					<img class="profile-image" src="images/avatar.png">
+					<figcaption class="profile-name" id="profile-name"></figcaption>
+				</figure>
+			</div>
+
+			<div class="profile-details">
+				<section class="profile-info">
+					<h1>Posts</h1>
+					<p id="profile-posts-count"></p>
+				</section>
+
+				<section class="profile-info">
+					<h1>Reactions</h1>
+					<p id="profile-likes-count"></p>
+				</section>
+
+				<button class="profile-button" id="logout-button">Log Out</button>
+				<section class="posts">
+					<section class="posts-section-header"></section>
+					<div class="prfile-avatar">
+						<figure class="post-section-header-avatar">
+							<img class="profile-image" src="images/avatar.png">
+						</figure>
+					</div>
+
+					<div class="post-section-input-container">
+						<form id="new-post">
+							<input type="text" title="new-post" placeholder="Say something" id="new-post-text">
+							<button class="fa fa-comment-alt"></button>
+						</form>
+					</div>
+					
+					<div  class = "ids-ripple" id = "loader"></div>
+					<section class = "posts-sections" id = "post-container"></section>
+				</section>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
